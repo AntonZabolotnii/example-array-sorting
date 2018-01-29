@@ -18,10 +18,10 @@ module.exports.generateArray = function (len = 1000, maxItemValue = len) {
 module.exports.log = function (data) {
     console.log(JSON.stringify(data));
 }
-module.exports.swap = function(arr, i) {
+module.exports.swap = function(arr, i, j) {
     const tmp = arr[i];
-    arr[i] = arr[i+1];
-    arr[i+1] = tmp;
+    arr[i] = arr[j];
+    arr[j] = tmp;
 }
 module.exports.measureTime = function(type, f) {
     return function() {
