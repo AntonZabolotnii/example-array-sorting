@@ -19,6 +19,9 @@ module.exports.log = function (data) {
     console.log(JSON.stringify(data));
 }
 module.exports.swap = function(arr, i, j) {
+    if (i === j) {
+        return;
+    }
     const tmp = arr[i];
     arr[i] = arr[j];
     arr[j] = tmp;

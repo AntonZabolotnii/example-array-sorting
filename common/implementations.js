@@ -49,8 +49,29 @@ function quickSort(arr) {
     return quickSortRe(arr);
 }
 
+function selectionSort(arr) {
+    const len = arr.length;
+    for (let i = 0; i < len - 1; i++) {
+        let minIndex = i;
+        let minValue = arr[i];
+
+        for (let j = i + 1; j < len; j++) {
+            if (arr[j] < minValue) {
+                minValue = arr[j];
+                minIndex = j;
+            }
+        }
+        if (minIndex !== i) {
+            swap(arr, minIndex, i);
+        }
+    }
+
+    return arr;
+}
+
 module.exports = {
     insertionSort,
     bubbleSort,
-    quickSort
+    quickSort,
+    selectionSort
 }
