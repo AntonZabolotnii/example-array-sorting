@@ -5,7 +5,8 @@ const {
     bubbleSort,
     quickSort,
     selectionSort,
-    mergeSort
+    mergeSort,
+    heapSort
 } = require('./lib/implementations');
 
 const sortTypeFnMapping = {
@@ -13,7 +14,8 @@ const sortTypeFnMapping = {
     bubble: bubbleSort,
     quick: quickSort,
     selection: selectionSort,
-    merge: mergeSort
+    merge: mergeSort,
+    heap: heapSort
 };
 
 const arr = generateArray(5e4);
