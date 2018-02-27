@@ -1,0 +1,34 @@
+{
+  "name": "array-sort",
+  "version": "1.0.0",
+  "description": "Different sorting algorithms implemented with JavaScript",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sort": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonZabolotnii/example-array-sorting.git"
+  },
+  "keywords": [
+    "array",
+    "sorting",
+    "sort",
+    "insertion",
+    "bubble",
+    "quick",
+    "selection",
+    "merge",
+    "heap"
+  ],
+  "author": "Anton Zabolotnii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonZabolotnii/example-array-sorting/issues"
+  },
+  "homepage": "https://github.com/AntonZabolotnii/example-array-sorting#readme"
+}
